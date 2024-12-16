@@ -3,6 +3,15 @@
 This is a Ruby on Rails 7 API application that provides functionality to shorten URLs and decode shortened URLs.
 
 ---
+## Demo
+Health-check url: https://url-shortener-service-fz9g.onrender.com/up
+
+-  Encode endpoint: https://url-shortener-service-fz9g.onrender.com/api/v1/encode
+
+-  Decode enpoint: https://url-shortener-service-fz9g.onrender.com/api/v1/decode
+
+> **_NOTE:_**  The free instance deployed by render.com will spin down with inactivity, which can delay requests by 50 seconds or more.
+---
 
 ## Prerequisites
 
