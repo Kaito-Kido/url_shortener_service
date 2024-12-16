@@ -37,7 +37,7 @@ class Api::V1::UrlsController < ApplicationController
 
   def invalid_shorten_url?(url)
     allowed_domains = if Rails.env.production?
-                        [ ENV["PRODUCTION_DOMAIN"] ]
+                        [ Rails.application.credentials.production[:domain] ]
     elsif Rails.env.test?
                         [ "test.host" ]
     else
