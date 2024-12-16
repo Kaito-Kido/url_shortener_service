@@ -71,3 +71,8 @@ Request body:
     "short_url": "http://localhost:3000/abc"
 }
 ```
+
+### 6. How to run test
+```
+rails spec
+```

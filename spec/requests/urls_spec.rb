@@ -41,7 +41,7 @@ RSpec.describe Api::V1::UrlsController, type: :controller do
         short_url = "#{request.base_url}/#{url.short_code}"
 
         get :decode, params: { short_url: short_url }
-        byebug
+
         expect(response).to have_http_status(:ok)
         expect(JSON.parse(response.body)['url']).to eq(url.original_url)
       end
